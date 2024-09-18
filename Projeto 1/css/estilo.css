@@ -1,8 +1,6 @@
 #titulo-principal {
   text-align: center;
 }
-html {
-}
 
 body {
   border: 2px solid black;
@@ -34,10 +32,11 @@ body {
   text-align: center;
   position: relative;
   bottom: 30%;
-  color: red;
+  color: rebeccapurple;
 }
 
 #meusprojetos {
+  color: brown;
   text-align: center;
   position: relative;
   bottom: 30%;
@@ -59,5 +58,11 @@ ul {
 .lista {
   position: relative;
   bottom: 30%;
-  font-size: x-large;
+  font-size: medium;
+}
+
+#comentario {
+  position: relative;
+  bottom: 70%;
+  left: 1%;
 }
