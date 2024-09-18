@@ -1,12 +1,63 @@
 #titulo-principal {
+  text-align: center;
 }
+html {
+}
+
 body {
-  background-image: ;
+  border: 2px solid black;
+  border-radius: 2.5%;
+  position: absolute;
+  width: 99%;
+  height: 98%;
 }
+.texto {
+  text-align: center;
+  font-size: medium;
+  position: relative;
+  bottom: 30%;
+}
+
 #imagem {
   border-radius: 50%;
+  position: relative;
+  left: 3%;
+}
+
+#identificacao {
+  text-align: center;
+  position: relative;
+  right: 40%;
 }
 
 .descricao {
+  text-align: center;
+  position: relative;
+  bottom: 30%;
   color: red;
+}
+
+#meusprojetos {
+  text-align: center;
+  position: relative;
+  bottom: 30%;
+}
+
+dl {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  top: 1px;
+  left: 25%;
+}
+
+ul {
+  width: 10%;
+  height: 10%;
+}
+
+.lista {
+  position: relative;
+  bottom: 30%;
+  font-size: x-large;
 }
