@@ -12,15 +12,16 @@
 }
 
 .item2 {
+  display: grid;
   grid-row-start: 2;
   grid-column-start: 2;
 }
 .item3 {
-  grid-row-start: 2;
+  grid-row-start: 1;
   grid-column-start: 2;
 }
 .item4 {
-  grid-row-start: 2;
+  grid-row-start: 1;
   grid-column-start: 2;
 }
 .item5 {
@@ -31,8 +32,8 @@
 .item6 {
   grid-row-start: 4;
   grid-column-start: 2;
-  text-align: center;
 }
+
 .item7 {
   grid-row-start: 5;
   grid-column-start: 2;
@@ -42,13 +43,12 @@
 }
 
 body {
+  font-size: large;
   background-size: 100%;
 }
 .texto {
-  font-size: medium;
   position: relative;
   top: 50%;
-  left: 20%;
 }
 
 #imagem {
@@ -61,26 +61,20 @@ body {
 
 .descricao {
   position: relative;
-  top: 40%;
-  left: 20%;
+  top: 30%;
   color: rebeccapurple;
 }
 
 #meusprojetos {
   position: relative;
-  bottom: 100%;
   color: brown;
 }
 
 ul {
-  width: 10%;
-  height: 10%;
-  position: relative;
-  left: 40%;
+  list-style-type: none;
 }
 
 .lista {
-  font-size: medium;
   position: relative;
   bottom: 10%;
 }
@@ -89,10 +83,8 @@ ul {
   max-width: 25px;
   max-height: 25px;
   position: relative;
-  right: 2%;
 }
 
 #comentario {
   position: relative;
-  right: 15%;
 }
