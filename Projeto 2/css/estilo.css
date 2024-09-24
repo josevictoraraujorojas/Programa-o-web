@@ -1,0 +1,61 @@
+header {
+}
+.content {
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+.esquerda {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  background-color: #d9d9d9;
+  position: relative;
+}
+.direita {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  background-color: #ffffff;
+}
+
+figure {
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+.titulo-principal {
+  font-size: 10cap;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.titulo-contato {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: relative;
+  left: 5%;
+}
+.lista-contato {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/*18 18*/
+.telefone {
+  list-style-image: url("img/icone-telefone.png");
+}
+.email {
+  list-style-image: url("img/icone-email.png");
+}
+.nome {
+  list-style-image: url("img/icone-perfil.png");
+}
+.link {
+  list-style-image: url("img/icone-link.png");
+}
