@@ -1,57 +1,124 @@
 header {
-  background-color: aqua;
+  background-color: #ebd3f8;
+  border-radius: 8px;
   text-align: center;
+  margin: -23px -8px;
+}
+
+.nav-link {
+  margin: 100px -100% 1000px 100px;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  margin-right: 16px;
+  justify-content: center;
+}
+.nav-link {
+  gap: 2rem;
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
 }
 
 aside {
-  background-color: red;
+  background-color: #ebd3f8;
+  font-size: 2rem;
   display: grid;
   grid-template-columns: 17% 1fr;
+  margin: 100px 100px 1000px 100px;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0px 10px rgba(224, 3, 184, 0.5);
 }
-.dadospessoais {
-  background-color: white;
+.descricao {
   grid-row-start: 1;
   grid-row-end: 1;
 
   grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.eu {
+  text-align: center;
+  grid-row-start: 2;
+  grid-row-end: 2;
+
   grid-column-start: 1;
+  grid-column-end: 1;
 }
 
 .informacao {
+  grid-row-start: 2;
+  grid-row-end: 2;
+
+  grid-column-start: 2;
+  grid-column-end: 2;
   text-align: center;
   position: relative;
-  top: 30%;
 }
 main {
-  text-align: center;
-  background-color: blueviolet;
+  background-color: #ebd3f8;
+  margin: 100px;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0px 10px rgba(224, 3, 184, 0.5);
 }
-footer {
-  background-color: blue;
-}
+
 nav {
-  background-color: brown;
+  justify-content: space-around;
+  align-items: center;
+}
+nav,
+.nav-projetos {
+  display: flex;
+  margin-right: 16px;
+  justify-content: center;
+}
+.nav-projetos {
+  gap: 3rem;
+  list-style: none;
+}
+.projeto {
+  border-radius: 2rem;
+  border: rgb(189, 52, 164) 0.2rem solid;
+  border-color: rgb(85, 77, 77);
+  text-align: center;
 }
 
 body {
-  font-size: large;
-  background-size: 100%;
+  display: grid;
+  row-gap: 15rem;
+  font-size: 1.5rem;
+  color: #393e46;
+  line-height: 1.6;
+  background: linear-gradient(45deg, #2e0249, #570a57, #a91079, #f806cc);
+  background-size: 300% 300%;
+  animation: colors 6s ease infinite;
 }
-
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 #imagem {
+  display: block;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
   border-radius: 50%;
-}
-
-.descricao {
-  color: rebeccapurple;
 }
 
 #meusprojetos {
   color: brown;
-}
-
-ul {
-  list-style-type: none;
 }
 
 #github {

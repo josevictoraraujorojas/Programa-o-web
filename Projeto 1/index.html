@@ -6,13 +6,21 @@
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="css/estilo.css" />
   </head>
-  <body background="img/fundo (3).png">
+  <body>
     <header>
       <h1 id="titulo-principal">Portfólio</h1>
+
+      <nav class="topo">
+        <ul class="nav-link">
+          <li><a href="#descricao">sobre mim</a></li>
+          <li><a href="#meusprojetos">meus projetos</a></li>
+        </ul>
+      </nav>
     </header>
 
     <aside>
-      <section class="dadospessoais">
+      <h2 id="descricao">Descrição</h2>
+      <section class="eu">
         <figure>
           <img
             id="imagem"
@@ -20,25 +28,17 @@
             alt="eu"
           />
         </figure>
-
-        <section class="meusdados">
-          <p id="identificacao">
-            Nome: José Victor Araújo Rojas
-            <br />Curso: Sistemas de Informação <br />Periodo: 4°
-          </p>
-        </section>
       </section>
 
       <section class="informacao">
-        <h2 class="descricao">Descrição</h2>
-
         <p class="texto">
-          Olá! Sou José Victor Araújo Rojas, estudante de Sistemas de Informação
-          no 4º período e um desenvolvedor front-end. Com habilidades em HTML,
-          CSS, JavaScript e Angular.
+          Olá! Sou José Victor Araújo Rojas, estudante do 4º período de Sistemas
+          de Informação e desenvolvedor front-end. Estou aprimorando minhas
+          habilidades em HTML, CSS, JavaScript e Angular.
           <br />
-          Neste portfólio, você encontrará uma seleção dos meus projetos que
-          demonstram todo meu conhecimento e aprendizado.
+          Neste portfólio, você encontrará uma seleção dos meus projetos, que
+          refletem meu conhecimento e aprendizado na disciplina de Programação
+          para Web 1.
         </p>
       </section>
     </aside>
@@ -47,95 +47,77 @@
       <h2 id="meusprojetos">Meus Projetos</h2>
 
       <nav>
-        <dl class="lista">
-          <dt class="lista">Projeto 1: Portfólio</dt>
+        <ul class="nav-projetos">
+          <li class="projeto">
+            Projeto 1: Portfólio Este projeto teve como objetivo criar um
+            portfólio que descrevesse todos os meus projetos. Tecnologias
+            utilizadas:
 
-          <dd class="lista">
-            Este projeto teve como objetivo criar um portfólio que descrevesse
-            todos os meus projetos.<br />
-            Tecnologias utilizadas:
-
-            <ul class="lista">
-              <li class="lista">HTML</li>
-              <li class="lista">CSS</li>
+            <ul class="lista-tecnologias">
+              <li class="tecnologia">HTML</li>
+              <li class="tecnologia">CSS</li>
             </ul>
-          </dd>
 
-          <dd class="lista">
             <a
-              class="lista"
+              class="link-github"
               href="https://github.com/josevictoraraujorojas/Programacao-web/tree/main/Projeto%201"
               target="_blank"
               ><img id="github" src="img/icone-github.png" alt="github" />
             </a>
-          </dd>
+          </li>
 
-          <dt class="lista">Projeto 2: Página pessoal</dt>
+          <li class="projeto">
+            Projeto 2: Página pessoal Este projeto teve como objetico ciar uma
+            pagina que contenha as minhas informações . Tecnologias utilizadas:
 
-          <dd class="lista">
-            Este projeto teve como objetivo criar um portfólio que descrevesse
-            todos os meus projetos.<br />
-            Tecnologias utilizadas:
-
-            <ul class="lista">
-              <li class="lista">HTML</li>
-              <li class="lista">CSS</li>
+            <ul class="lista-tecnologias">
+              <li class="tecnologias">HTML</li>
+              <li class="tecnologias">CSS</li>
             </ul>
-          </dd>
 
-          <dd class="lista">
             <a
-              class="lista"
+              class="link-github"
               href="https://github.com/josevictoraraujorojas/Programacao-web/tree/main/Projeto%202"
               target="_blank"
               ><img id="github" src="img/icone-github.png" alt="github" />
             </a>
-          </dd>
+          </li>
 
-          <dt class="lista">Projeto 3: Página de Eventos</dt>
+          <li class="projeto">
+            Projeto 3: Página de Eventos Este projeto teve como objetivo criar
+            uma pagina para guardar informações sobre um evento. Tecnologias
+            utilizadas:
 
-          <dd class="lista">
-            Este projeto teve como objetivo criar um portfólio que descrevesse
-            todos os meus projetos.<br />
-            Tecnologias utilizadas:
-
-            <ul class="lista">
-              <li class="lista">HTML</li>
-              <li class="lista">CSS</li>
+            <ul class="lista-tecnologias">
+              <li class="tecnologias">HTML</li>
+              <li class="tecnologias">CSS</li>
             </ul>
-          </dd>
 
-          <dd class="lista">
             <a
-              class="lista"
+              class="lin-github"
               href="https://github.com/josevictoraraujorojas/Programacao-web/tree/main/Projeto%201"
               target="_blank"
               ><img id="github" src="img/icone-github.png" alt="github" />
             </a>
-          </dd>
+          </li>
 
-          <dt class="lista">Projeto 4: Loja Virtual</dt>
+          <li class="projeto">
+            Projeto 4: Loja Virtual Este projeto teve como objetivo criar uma
+            pagina de uma loja virtual Tecnologias utilizadas:
 
-          <dd class="lista">
-            Este projeto teve como objetivo criar um portfólio que descrevesse
-            todos os meus projetos.<br />
-            Tecnologias utilizadas:
-
-            <ul class="lista">
-              <li class="lista">HTML</li>
-              <li class="lista">CSS</li>
+            <ul class="lista-tecnologias">
+              <li class="tecnologias">HTML</li>
+              <li class="tecnologias">CSS</li>
             </ul>
-          </dd>
 
-          <dd class="lista">
             <a
-              class="lista"
+              class="link-github"
               href="https://github.com/josevictoraraujorojas/Programacao-web/tree/main/Projeto%201"
               target="_blank"
               ><img id="github" src="img/icone-github.png" alt="github" />
             </a>
-          </dd>
-        </dl>
+          </li>
+        </ul>
       </nav>
     </main>
     <footer>
