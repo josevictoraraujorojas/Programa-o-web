@@ -6,7 +6,7 @@ header {
 }
 
 .nav-link {
-  margin: 100px -100% 1000px 100px;
+  margin: 100px -100% 100px 100px;
   position: fixed;
   top: 0px;
   display: flex;
