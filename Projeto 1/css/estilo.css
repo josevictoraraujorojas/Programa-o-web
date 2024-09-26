@@ -1,128 +1,109 @@
+body {
+  background-color: black;
+}
 header {
-  background-color: #ebd3f8;
-  border-radius: 8px;
-  text-align: center;
-  margin: -23px -8px;
-}
-
-.nav-link {
-  margin: 100px -100% 100px 100px;
-  position: fixed;
-  top: 0px;
+  color: white;
   display: flex;
-  margin-right: 16px;
-  justify-content: center;
-}
-.nav-link {
-  gap: 2rem;
-  list-style: none;
-}
-a {
-  color: black;
-  text-decoration: none;
-  text-decoration-color: white;
-}
-
-aside {
-  background-color: #ebd3f8;
-  font-size: 2rem;
-  display: grid;
-  grid-template-columns: 17% 1fr;
-  margin: 100px 100px 1000px 100px;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-  box-shadow: 0px 10px rgba(224, 3, 184, 0.5);
-}
-.descricao {
-  grid-row-start: 1;
-  grid-row-end: 1;
-
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.eu {
-  text-align: center;
-  grid-row-start: 2;
-  grid-row-end: 2;
-
-  grid-column-start: 1;
-  grid-column-end: 1;
-}
-
-.informacao {
-  grid-row-start: 2;
-  grid-row-end: 2;
-
-  grid-column-start: 2;
-  grid-column-end: 2;
-  text-align: center;
-  position: relative;
-}
-main {
-  background-color: #ebd3f8;
-  margin: 100px;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-  box-shadow: 0px 10px rgba(224, 3, 184, 0.5);
-}
-
-nav {
-  justify-content: space-around;
   align-items: center;
 }
-nav,
-.nav-projetos {
+
+#logo {
   display: flex;
-  margin-right: 16px;
-  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
-.nav-projetos {
-  gap: 3rem;
+
+#logo:hover {
+  cursor: default;
+}
+header,
+nav {
+  justify-content: space-around;
+}
+
+header,
+nav,
+ul {
   list-style: none;
-}
-.projeto {
-  border-radius: 2rem;
-  border: rgb(189, 52, 164) 0.2rem solid;
-  border-color: rgb(85, 77, 77);
-  text-align: center;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
 }
 
-body {
-  display: grid;
-  row-gap: 15rem;
-  font-size: 1.5rem;
-  color: #393e46;
-  line-height: 1.6;
-  background: linear-gradient(45deg, #2e0249, #570a57, #a91079, #f806cc);
-  background-size: 300% 300%;
-  animation: colors 6s ease infinite;
-}
-@keyframes colors {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-#imagem {
-  display: block;
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-#meusprojetos {
-  color: brown;
-}
-
-#github {
-  max-width: 25px;
-  max-height: 25px;
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
   position: relative;
+}
+
+.link:hover {
+  color: gray;
+  text-decoration: underline;
+  transition: 0.5s ease;
+}
+
+.icone-portfolio {
+  width: 20px;
+  height: 20px;
+}
+
+#sobre-mim {
+  text-align: center;
+  color: #fff;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 60% 10% 10%;
+  width: 80%;
+}
+
+#titulo-sobre-mim {
+  grid-column-start: 1;
+  grid-column-end: 1;
+
+  grid-row-start: 1;
+  grid-row-end: 1;
+  font-size: 4rem;
+}
+
+#especial {
+  color: #640d5f;
+}
+
+#minha-descrição {
+  grid-column-start: 1;
+  grid-column-end: 1;
+
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+#linkedin {
+  grid-column-start: 1;
+  grid-column-end: 1;
+
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+#imagem-sobre-mim {
+  grid-column-start: 2;
+  grid-column-end: 2;
+
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#minha-foto {
+  width: 100%;
+  height: 100%;
+}
+
+#minhas-habilidades {
+  background-color: aquamarine;
+}
+
+#meus-projetos {
+  background-color: blueviolet;
 }
