@@ -1,5 +1,7 @@
 body {
   background-color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 header {
   color: white;
@@ -68,11 +70,13 @@ ul {
   font-size: 4rem;
 }
 
-#especial {
+.especial {
   color: #640d5f;
 }
 
-#minha-descrição {
+.descrição {
+  color: rgb(177, 179, 179);
+  font-size: 1.1rem;
   grid-column-start: 1;
   grid-column-end: 1;
 
@@ -101,7 +105,31 @@ ul {
 }
 
 #minhas-habilidades {
-  background-color: aquamarine;
+  text-align: center;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  width: 80%;
+}
+
+#titulo-minhas-habilidades {
+  font-size: 3rem;
+}
+#lista-habilidades {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+.habilidades {
+  background-color: rgb(14, 14, 16);
+  width: 75%;
+  border: 30px solid linear-gradient(#40e0d0, #ff8c00, #ff0080);
+}
+.img-habilidades {
+  width: 50px;
+  height: 50px;
 }
 
 #meus-projetos {
