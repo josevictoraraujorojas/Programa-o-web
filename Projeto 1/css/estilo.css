@@ -152,6 +152,10 @@ ul {
   word-spacing: 0.1cap;
 }
 .barra-porcentagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   width: 100%;
   height: 10%;
   text-align: start;
@@ -161,9 +165,6 @@ ul {
   left: 1rem;
 }
 .barra-porcentagem div {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
   width: 90%;
   height: 20%;
   background-color: #fff;
