@@ -1,7 +1,10 @@
 header {
   font-size: 1.3rem;
 }
-
+p {
+  color: rgb(119, 115, 115);
+  font-size: 1.4rem;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -10,26 +13,25 @@ header {
   align-items: center;
   justify-content: space-around;
 }
-
 header div nav ul {
   display: flex;
   gap: 1.8rem;
   list-style-type: none;
 }
-
 header div nav a {
   color: rgb(119, 115, 115);
   text-decoration: none;
 }
-
 section {
-  background-color: rgb(250, 250, 250);
   width: 100%;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+  padding-top: 6rem;
 }
-
-.introducao {
+#introducao {
+  padding-top: 0;
+}
+#introducao div {
   width: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -37,40 +39,196 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
-.introducao p {
+#introducao div p {
   grid-column-start: 1;
-  color: rgb(119, 115, 115);
-  font-size: 1.4rem;
   text-align: start;
 }
-
-.introducao header h1 {
+#introducao div header h1 {
   font-size: 5rem;
   line-height: 0.7;
   margin-top: 1rem;
   margin-bottom: -0.2rem;
 }
-
-.introducao header h6 {
+#introducao div header h6 {
   font-size: 1.5rem;
   line-height: 0.7;
   margin-bottom: 1rem;
   margin-top: 3rem;
 }
-
-.introducao header h6 strong {
-  color: rgb(242, 104, 104);
+#introducao div header h6 strong {
+  color: rgb(0, 0, 0);
 }
-.introducao a {
+#introducao div a {
   grid-column-start: 1;
   width: 30%;
   border-radius: 25px;
 }
-
-.introducao a button {
+#introducao div a button {
   width: 100%;
   height: 100%;
   border-radius: 25px;
-  background-color: rgb(242, 104, 104);
+  background-color: rgb(0, 0, 0);
   color: white;
+}
+#sobre {
+  background-color: rgb(246, 246, 246);
+}
+#sobre div {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+}
+#sobre div nav {
+  grid-column-start: 1;
+}
+#sobre div nav ul {
+  list-style: none;
+}
+.icone-social {
+  width: 30px;
+  height: 30px;
+}
+#sobre div div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#sobre div div h2 {
+  font-size: 2rem;
+}
+#sobre-mim {
+  padding-bottom: 1rem;
+  border-bottom: 1.2px solid rgb(222, 221, 221);
+}
+#sobre div div div {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#cont {
+  width: 60%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.conteinerCurso {
+  width: 100%;
+  display: flex;
+  padding-right: 2rem;
+  flex-direction: column;
+}
+.conteinerExperiencias {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#educacao div section {
+  text-align: center;
+}
+#titulo1 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+#titulo2 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+.cursos {
+  background-color: rgb(246, 246, 246);
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  border-left: 2px solid black;
+}
+.experiencias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+  padding-top: 0;
+  border-left: 2px solid black;
+}
+.centro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+  padding-top: 0;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+#habilidades {
+  background-color: rgb(246, 246, 246);
+  text-align: center;
+}
+#conteinerHabilidades {
+  text-align: center;
+  width: 60%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+#habilidades h1 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.listaHabilidades {
+  width: 100%;
+  list-style-type: none;
+  grid-row-start: 2;
+}
+.descricao {
+  display: flex;
+  justify-content: space-between;
+}
+.barra {
+  width: 100%;
+  height: 0.4rem;
+  background-color: rgb(179, 178, 178);
+  border-radius: 12px;
+}
+#html {
+  width: 84%;
+  height: 0.4rem;
+  background-color: black;
+  border-radius: 12px;
+}
+#java {
+  width: 95%;
+  height: 0.4rem;
+  background-color: black;
+  border-radius: 12px;
+}
+#angular {
+  width: 0%;
+  height: 0.4rem;
+  background-color: black;
+  border-radius: 12px;
+}
+#poo {
+  width: 80%;
+  height: 0.4rem;
+  background-color: black;
+  border-radius: 12px;
+}
+#ed {
+  width: 93%;
+  height: 0.4rem;
+  background-color: black;
+  border-radius: 12px;
+}
+#sql {
+  width: 80%;
+  height: 0.4rem;
+  background-color: black;
+  border-radius: 12px;
 }
