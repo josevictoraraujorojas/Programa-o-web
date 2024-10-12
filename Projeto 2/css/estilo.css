@@ -119,10 +119,28 @@ section {
   padding-right: 2rem;
   flex-direction: column;
 }
-.conteinerExperiencias {
+.conteinerDisciplinas {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+table {
+  border-collapse: collapse;
+  color: rgb(119, 115, 115);
+  font-size: 1.4rem;
+}
+th {
+}
+
+tr {
+  border-left: 2px solid black;
+  border-bottom: 1rem solid white;
+  background-color: rgb(246, 246, 246);
+  height: 6.8em;
+}
+
+td {
 }
 #educacao div section {
   text-align: center;
@@ -136,35 +154,12 @@ section {
   grid-column-start: 1;
 }
 .cursos {
+  height: 9em;
   background-color: rgb(246, 246, 246);
   margin-bottom: 0;
   padding-bottom: 0;
   padding-top: 0;
   border-left: 2px solid black;
-}
-.experiencias {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background-color: rgb(246, 246, 246);
-  margin-bottom: 0;
-  padding-bottom: 2rem;
-  padding-top: 0;
-  border-left: 2px solid black;
-}
-.centro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background-color: rgb(246, 246, 246);
-  margin-bottom: 0;
-  padding-bottom: 2rem;
-  padding-top: 0;
-  border-left: 2px solid black;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
 }
 #habilidades {
   background-color: rgb(246, 246, 246);
@@ -214,8 +209,8 @@ section {
   background-color: black;
   border-radius: 12px;
 }
-#poo {
-  width: 80%;
+#javascript {
+  width: 0%;
   height: 0.4rem;
   background-color: black;
   border-radius: 12px;
