@@ -1,4 +1,8 @@
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   font-size: 1.3rem;
 }
 p {
@@ -13,6 +17,7 @@ p {
   align-items: center;
   justify-content: space-around;
 }
+
 header div nav ul {
   display: flex;
   gap: 1.8rem;
@@ -226,4 +231,58 @@ td {
   height: 0.4rem;
   background-color: black;
   border-radius: 12px;
+}
+
+#contato {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contato div {
+  width: 60%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+#contato h1 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+#contato div form {
+  font-size: 1.4rem;
+  width: 50%;
+}
+
+.text {
+  width: 100%;
+  height: 3rem;
+  border-radius: 5px;
+  background-color: rgb(246, 246, 246);
+}
+textarea {
+  width: 80%;
+  height: 20rem;
+  background-color: rgb(246, 246, 246);
+}
+
+input {
+  width: 15%;
+  height: 3rem;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+}
+#contato div div {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-size: 1.4rem;
+  width: 50%;
 }
