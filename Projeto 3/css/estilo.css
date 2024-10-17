@@ -48,3 +48,61 @@ header nav ul {
   height: 100%;
   font-size: 1rem;
 }
+#sobre {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50vw;
+  background-color: white;
+}
+
+#section-sobre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#section-sobre h1 {
+  padding-bottom: 2rem;
+}
+
+#detalhe {
+  text-align: start;
+  margin: 0 auto;
+  width: 40%;
+  font-size: 2rem;
+}
+
+#detalhe p {
+  border-left: 3px solid black;
+  padding-left: 1rem;
+}
+
+#aprender {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto;
+  width: 40%;
+  font-size: 2rem;
+}
+#aprender ul {
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  list-style: none;
+  gap: 2rem;
+}
+
+#aprender table {
+  border-collapse: collapse;
+  font-size: 2rem;
+}
+
+tr {
+  border-left: 3px solid black;
+  height: 4rem;
+}
