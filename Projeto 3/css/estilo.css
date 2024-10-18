@@ -199,6 +199,6 @@ details {
   cursor: pointer;
 }
 details[open] {
-  border-left: 3px solid black;
+  background-color: aquamarine;
   height: 7rem;
 }
