@@ -2,14 +2,26 @@ body {
   background-color: black;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+section {
+  padding-top: 3.5rem;
+}
 header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  background-color: black;
 }
 
 #logo {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 2rem;
 }
@@ -27,6 +39,7 @@ nav,
 ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 1.2rem;
   align-items: center;
 }
@@ -51,33 +64,22 @@ ul {
 
 #sobre-mim {
   color: #fff;
-  display: grid;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 60% 10% 10%;
   width: 80%;
+  height: 100vh;
 }
 
-#titulo-sobre-mim {
-  grid-column-start: 1;
-  grid-column-end: 1;
-
-  grid-row-start: 1;
-  grid-row-end: 1;
-  font-size: 4rem;
+#texto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 3rem;
 }
 
 .especial {
   color: #640d5f;
-}
-
-#sobre-mim p {
-  grid-column-start: 1;
-  grid-column-end: 1;
-
-  grid-row-start: 2;
-  grid-row-end: 2;
 }
 
 .descrição {
@@ -86,43 +88,31 @@ ul {
 }
 
 #linkedin {
-  width: 45%;
-  height: 55%;
-  border-radius: 20px;
-  background-color: #e100ff;
-  grid-column-start: 1;
-  grid-column-end: 1;
-
-  grid-row-start: 3;
-  grid-row-end: 3;
 }
 
 #linkedin button {
   border-radius: 20px;
-  width: 100%;
+  width: 30%;
   height: 100%;
   background-image: linear-gradient(45deg, #7f00ff, #e100ff);
 }
 
 #imagem-sobre-mim {
-  grid-column-start: 2;
-  grid-column-end: 2;
-
-  grid-row-start: 1;
-  grid-row-end: 3;
 }
 #minha-foto {
   width: 100%;
-  height: 100%;
 }
 
 #minhas-habilidades {
   text-align: center;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
   width: 60%;
+  height: 100vh;
   margin-bottom: 20%;
   gap: 2rem;
 }
@@ -131,32 +121,33 @@ ul {
   font-size: 3rem;
 }
 #lista-habilidades {
-  display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
   gap: 4rem;
 }
 .habilidades {
   background-color: rgb(14, 14, 16);
-  width: 100%;
-  height: 120%;
+  width: 20%;
+  height: 100%;
+  margin: 0 auto;
   border-top: 10px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(45deg, red, blue);
 }
 .habilidades p {
   height: 40%;
-  text-align: justify;
+  text-align: start;
   padding-left: 20px;
   padding-right: 20px;
   word-spacing: 0.1cap;
 }
 .barra-porcentagem {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  width: 100%;
   height: 10%;
   text-align: start;
 }
@@ -166,13 +157,13 @@ ul {
 }
 .barra-porcentagem div {
   width: 90%;
-  height: 20%;
-  background-color: #fff;
+  height: 0.5rem;
+  background-color: white;
 }
 .barra-porcentagem div div {
   width: 80%;
   height: 100%;
-  background-color: cornflowerblue;
+  background-color: #640d5f;
 }
 .img-habilidades {
   width: 50px;
@@ -181,11 +172,13 @@ ul {
 
 #meus-projetos {
   text-align: center;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
   width: 60%;
+  height: 100vh;
   margin-bottom: 20%;
 }
 #meus-projetos h1 {
@@ -193,20 +186,22 @@ ul {
 }
 
 #meus-projetos ul {
-  display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  height: 70%;
   gap: 4rem;
 }
 
 #meus-projetos li {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 0 auto;
   height: 100%;
-  width: 100%;
   background-color: rgb(14, 14, 16);
 }
 
 #meus-projetos li p {
-  text-align: justify;
+  text-align: start;
   padding-left: 20px;
   padding-right: 20px;
   word-spacing: 0.1cap;
