@@ -48,8 +48,6 @@ header {
 }
 
 #pesquisa input {
-  background-image: <i class= "fa-solid fa-magnifying-glass" style=
-    "color: #707070" ></i>;
   border: 2px solid #ededed;
   border-radius: 5px;
   width: 70%;
