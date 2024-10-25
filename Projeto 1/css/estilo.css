@@ -190,7 +190,6 @@ ul {
   flex-direction: column;
   width: 20%;
   margin: 0 auto;
-  height: 100%;
   background-color: rgb(14, 14, 16);
 }
 
@@ -212,7 +211,6 @@ ul {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    height: 100%;
     background-color: rgb(14, 14, 16);
   }
 
