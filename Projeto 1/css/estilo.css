@@ -201,35 +201,6 @@ ul {
 }
 
 @media only screen and (max-width: 1024px) {
-  #meus-projetos ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #meus-projetos li {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    background-color: rgb(14, 14, 16);
-  }
-
-  #lista-habilidades {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    gap: 4rem;
-  }
-  .habilidades {
-    background-color: rgb(14, 14, 16);
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    border-top: 10px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(45deg, red, blue);
-  }
-
   #sobre-mim {
     color: #fff;
     display: flex;
@@ -238,11 +209,65 @@ ul {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    height: 100vh;
+    height: 150vh;
   }
 
   #minha-foto {
-    width: 100%;
+    width: 50%;
     height: 50%;
+  }
+
+  #minhas-habilidades {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    width: 70%;
+    height: 150vh;
+  }
+
+  #lista-habilidades {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    width: 90%;
+    height: 65%;
+  }
+  .habilidades {
+    background-color: rgb(14, 14, 16);
+    width: 90%;
+    height: 100%;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, red, blue);
+  }
+
+  #meus-projetos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    width: 60%;
+    height: 150vh;
+  }
+
+  #meus-projetos ul {
+    width: 90%;
+    height: 100%;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #meus-projetos li {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(14, 14, 16);
   }
 }
