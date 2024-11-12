@@ -201,6 +201,10 @@ ul {
 }
 
 @media only screen and (max-width: 1024px) {
+  section {
+    padding-top: 5.8rem;
+  }
+
   #sobre-mim {
     color: #fff;
     display: flex;
@@ -209,36 +213,43 @@ ul {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    height: 200vh;
+    height: 100vh;
+  }
+
+  #texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
   }
 
   #minha-foto {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 60%;
   }
 
   #minhas-habilidades {
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     color: #fff;
-    width: 70%;
-    height: 280vh;
+    width: 100%;
+    height: 200vh;
   }
 
   #lista-habilidades {
     display: flex;
     gap: 2rem;
     flex-direction: column;
+    margin: 0 auto;
     width: 90%;
-    height: 65%;
+    height: 100%;
   }
   .habilidades {
     background-color: rgb(14, 14, 16);
-    width: 90%;
+    width: 100%;
     height: 100%;
+    margin: 0 auto;
     border-image-slice: 1;
     border-image-source: linear-gradient(45deg, red, blue);
   }
@@ -250,16 +261,16 @@ ul {
     margin-left: auto;
     margin-right: auto;
     color: #fff;
-    width: 60%;
-    height: 180vh;
+    width: 100%;
+    height: 240vh;
   }
 
   #meus-projetos ul {
-    width: 90%;
+    width: 100%;
     height: 100%;
-
     margin: 0 auto;
     display: flex;
+
     flex-direction: column;
   }
 
@@ -269,5 +280,9 @@ ul {
     width: 90%;
     margin: 0 auto;
     background-color: rgb(14, 14, 16);
+  }
+
+  #meus-projetos li p {
+    font-size: 1rem;
   }
 }
