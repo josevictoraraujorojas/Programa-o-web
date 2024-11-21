@@ -1,6 +1,7 @@
 // Seleciona o visor e todos os botões
 const display = document.getElementById('display');
 const buttons = document.querySelectorAll('#buttons .button');
+let posfixa = "";
 
 // Função para atualizar o visor
 function updateDisplay(value) {
@@ -10,18 +11,78 @@ function updateDisplay(value) {
     display.value = temp;
 
 }
+function infixaParaPosfixa() {
+  posfixa = "";
+  let pilha = [];
+  const expression = display.value
+    .replace(/,/g, '.')  // Substitui vírgula por ponto decimal
+    .replace(/×/g, '*')  // Substitui símbolo de multiplicação por *
+    .replace(/÷/g, '/'); // Substitui símbolo de divisão por /
+
+  for (let i = 0; i < expression.length; i++) {
+    const char = expression.charAt(i);
+
+    if (!isNaN(char) && char !== " ") {
+
+      posfixa += char;
+    } else if (char === '(') {
+
+      pilha.push(char);
+    } else if (char === '+' || char === '-') {
+
+      while (pilha.length > 0 && pilha[pilha.length - 1] !== '(') {
+        posfixa += pilha.pop();
+      }
+      pilha.push(char);
+    } else if (char === '*' || char === '/') {
+
+      while ( pilha.length > 0 && (pilha[pilha.length - 1] === '*' || pilha[pilha.length - 1] === '/')) {
+        posfixa += pilha.pop();
+      }
+      pilha.push(char);
+    } else if (char === ')') {
+
+      let retira = pilha.pop();
+      while (retira !== '(') {
+        posfixa += retira;
+        retira = pilha.pop();
+      }
+    }
+  }
+
+
+  while (pilha.length > 0) {
+    const operador = pilha.pop();
+    posfixa += operador;
+  }
+}
 
 // Função para realizar o cálculo
 function calculate() {
-  
-    stackBrackets = [];
-    const expression = display.value.
-    replace(/,/g, '.')  // Substitui vírgula por ponto decimal - regex
-    .replace(/×/g, '*')  // Substitui símbolo de multiplicação por * - regex
-    .replace(/÷/g, '/'); // Substitui símbolo de divisão por / - regex
 
-    // Usa eval() para calcular a expressão
-    let result = eval(expression);  ///DANGERRRR! SECURUTY BREAK
+  infixaParaPosfixa();
+  let stack =[];
+
+  for(i=0;i<posfixa.length;i++){
+    if(posfixa.charAt(i) == "+" || posfixa.charAt(i) == "-" || posfixa.charAt(i) == "*" || posfixa.charAt(i) == "/"){
+      let aux1 =parseInt( stack.pop());
+      let aux2 =parseInt( stack.pop());
+
+      if(posfixa.charAt(i) == "+"){
+        stack.push(parseInt(aux1+aux2));
+      } else if(posfixa.charAt(i) == "-"){
+        stack.push(parseInt(aux1-aux2));
+      }else if(posfixa.charAt(i) == "*"){
+        stack.push(parseInt(aux1*aux2));
+      }else if(posfixa.charAt(i) == "/"){
+        stack.push(parseInt(aux1/aux2));
+      }
+    }else{
+      stack.push(posfixa.charAt(i))
+    }
+  }
+    
+    let result = stack.pop();
     
    // Converte o ponto decimal do resultado para vírgula
     display.value = result.toString().replace('.', ',');
@@ -62,14 +123,20 @@ buttons.forEach(button => {
     } else if (button.dataset.equal) {
       
       // Se for o botão de igual, realiza o cálculo
+
       calculate();
 
-    } else if (button.dataset.decimal) {
+    }  else if (button.dataset.hp) {
+
+      infixaParaPosfixa();
+
+    }
+    else if (button.dataset.decimal) {
       // Se for o botão de vírgula, adiciona a vírgula para decimais
       updateDisplay(',');
     }else if(button.dataset.parentheses){
 
-        if(display.value.charAt(display.value.length-1)=='('||display.value.charAt(display.value.length-1)==""){
+        if(display.value.charAt(display.value.length-1)=='('||display.value.charAt(display.value.length-1)==""||display.value.charAt(display.value.length-1)=="+"||display.value.charAt(display.value.length-1)=="-"||display.value.charAt(display.value.length-1)=="÷"||display.value.charAt(display.value.length-1)=="×"){
             console.log("teste");
             updateDisplay('(');
         }else{
