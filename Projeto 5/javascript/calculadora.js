@@ -126,11 +126,7 @@ buttons.forEach(button => {
 
       calculate();
 
-    }  else if (button.dataset.hp) {
-
-      infixaParaPosfixa();
-
-    }
+    }  
     else if (button.dataset.decimal) {
       // Se for o botão de vírgula, adiciona a vírgula para decimais
       updateDisplay(',');

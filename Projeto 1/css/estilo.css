@@ -23,6 +23,9 @@ header {
   align-items: center;
   font-size: 2rem;
 }
+#hamburguer {
+  display: none;
+}
 
 #logo:hover {
   cursor: default;
@@ -52,6 +55,36 @@ ul {
   color: gray;
   text-decoration: underline;
   transition: 0.5s ease;
+}
+
+#menu-hamburguer {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  color: white;
+
+  align-items: center;
+  background-color: black;
+}
+
+#menu-hamburguer nav {
+  width: 100%;
+  display: flex;
+
+  flex-direction: column;
+}
+
+#menu-hamburguer ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#menu-hamburguer li {
+  text-align: center;
 }
 
 .icone-portfolio {
@@ -122,7 +155,7 @@ ul {
 }
 .habilidades {
   background-color: rgb(14, 14, 16);
-  width: 20%;
+  width: 50%;
   height: 100%;
   margin: 0 auto;
   border-top: 10px solid;
@@ -188,7 +221,8 @@ ul {
 #meus-projetos li {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 50%;
+  height: 100%;
   margin: 0 auto;
   background-color: rgb(14, 14, 16);
 }
@@ -206,7 +240,6 @@ ul {
   }
 
   #sobre-mim {
-    color: #fff;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -231,27 +264,22 @@ ul {
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    color: #fff;
+
     width: 100%;
-    height: 200vh;
+    height: 100vh;
   }
 
   #lista-habilidades {
     display: flex;
     gap: 2rem;
     flex-direction: column;
-    margin: 0 auto;
-    width: 90%;
+
+    width: 80%;
     height: 100%;
   }
   .habilidades {
-    background-color: rgb(14, 14, 16);
-    width: 100%;
+    width: 90%;
     height: 100%;
-    margin: 0 auto;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(45deg, red, blue);
   }
 
   #meus-projetos {
@@ -260,17 +288,15 @@ ul {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    color: #fff;
     width: 100%;
-    height: 240vh;
+    height: 100vh;
   }
 
   #meus-projetos ul {
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin: 0 auto;
     display: flex;
-
     flex-direction: column;
   }
 
@@ -279,7 +305,178 @@ ul {
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
-    background-color: rgb(14, 14, 16);
+  }
+
+  #meus-projetos li p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #menu {
+    display: none;
+  }
+
+  #hamburguer {
+    display: flex;
+  }
+
+  section {
+    padding-top: 5.8rem;
+  }
+
+  #sobre-mim {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100vh;
+  }
+
+  #texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+  }
+
+  #minha-foto {
+    width: 100%;
+    height: 60%;
+  }
+
+  #minhas-habilidades {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 170vh;
+  }
+
+  #lista-habilidades {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+    width: 80%;
+    height: 100%;
+  }
+  .habilidades {
+    width: 90%;
+    height: 100%;
+  }
+
+  #meus-projetos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #meus-projetos ul {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #meus-projetos li {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #meus-projetos li p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #menu {
+    display: none;
+  }
+
+  #hamburguer {
+    display: flex;
+  }
+
+  section {
+    padding-top: 5.8rem;
+  }
+
+  #sobre-mim {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 140vh;
+  }
+
+  #texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+  }
+
+  #minha-foto {
+    width: 100%;
+    height: 60%;
+  }
+
+  #minhas-habilidades {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 250vh;
+  }
+
+  #lista-habilidades {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+    width: 80%;
+    height: 100%;
+  }
+  .habilidades {
+    width: 90%;
+    height: 100%;
+  }
+
+  #meus-projetos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #meus-projetos ul {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #meus-projetos li {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
   }
 
   #meus-projetos li p {

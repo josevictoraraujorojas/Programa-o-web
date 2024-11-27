@@ -5,14 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="css/estilo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <div id="logo">
         <img src="img/Figure-Header.png" class="icone-portfolio" alt="" />
-
         <p>Meu Portfolio</p>
       </div>
+      <button id="hamburguer"><i class="fa-solid fa-bars"></i></button>
+      <nav id="menu">
+        <ul>
+          <li>
+            <a href="#sobre-mim" class="link">Sobre</a>
+          </li>
+          <li>
+            <a href="#minhas-habilidades" class="link">Habilidades</a>
+          </li>
+          <li>
+            <a href="#meus-projetos" class="link">Projetos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <script src="js/javascript.js"></script>
+    </header>
+
+    <section id="menu-hamburguer">
       <nav>
         <ul>
           <li>
@@ -26,7 +48,7 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </section>
 
     <main>
       <section id="sobre-mim">
