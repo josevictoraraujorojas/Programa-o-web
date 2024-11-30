@@ -25,6 +25,8 @@ header {
 }
 #hamburguer {
   display: none;
+  background-color: black;
+  border: 0;
 }
 
 #logo:hover {
@@ -312,7 +314,7 @@ ul {
   }
 }
 
-@media only screen and (max-height: 960px) {
+@media only screen and (max-height: 960px) and (min-height: 602px) {
   #menu {
     display: none;
   }
@@ -398,7 +400,7 @@ ul {
   }
 }
 
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 600px) and (min-height: 0px) {
   #menu {
     display: none;
   }
