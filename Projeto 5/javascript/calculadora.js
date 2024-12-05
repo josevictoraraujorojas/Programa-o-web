@@ -23,13 +23,10 @@ function infixaParaPosfixa() {
     const char = expression.charAt(i);
 
     if (!isNaN(char) && char !== " ") {
-
       posfixa += char;
     } else if (char === '(') {
-
       pilha.push(char);
     } else if (char === '+' || char === '-') {
-
       while (pilha.length > 0 && pilha[pilha.length - 1] !== '(') {
         posfixa += pilha.pop();
       }

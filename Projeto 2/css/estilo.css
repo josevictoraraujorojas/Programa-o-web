@@ -10,6 +10,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
   background-color: white;
 }
 p {
@@ -25,6 +26,12 @@ p {
   justify-content: space-around;
 }
 
+#hamburguer {
+  display: none;
+  background-color: white;
+  border: 0;
+}
+
 header div nav ul {
   display: flex;
   gap: 1.8rem;
@@ -33,6 +40,34 @@ header div nav ul {
 header div nav a {
   color: rgb(119, 115, 115);
   text-decoration: none;
+}
+
+#menu-hamburguer {
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+  padding-bottom: 1rem;
+}
+
+#menu-hamburguer ul {
+  margin: 0 auto;
+}
+
+#menu-hamburguer nav ul {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 1.8rem;
+  list-style-type: none;
+}
+#menu-hamburguer nav a {
+  color: rgb(119, 115, 115);
+  text-decoration: none;
+  margin: 0 auto;
 }
 section {
   width: 100%;
@@ -295,8 +330,14 @@ input {
 }
 
 @media only screen and (max-width: 450px) {
-  body {
+  #hamburguer {
+    display: flex;
   }
+
+  #menu {
+    display: none;
+  }
+
   p {
     color: rgb(119, 115, 115);
     font-size: 0.8rem;
@@ -316,5 +357,13 @@ input {
 
   #sobre div nav ul {
     display: flex;
+  }
+
+  input {
+    width: 50%;
+    height: 3rem;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
   }
 }

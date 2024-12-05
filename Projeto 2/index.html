@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/estilo.css" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header id="navegacao">
@@ -13,7 +17,11 @@
           <h1>Sobre mim</h1>
         </div>
 
-        <div>
+        <button id="hamburguer">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div id="menu">
           <nav>
             <ul>
               <li>
@@ -31,7 +39,24 @@
       </div>
     </header>
 
+    <script src="js/javascript.js"></script>
     <main>
+      <section id="menu-hamburguer">
+        <nav>
+          <ul>
+            <li>
+              <a href="#introducao">Inicio</a>
+            </li>
+            <li>
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+              <a href="#contato">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
       <section id="introducao">
         <div>
           <header>
