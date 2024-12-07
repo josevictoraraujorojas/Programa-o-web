@@ -9,6 +9,7 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: white;
+  padding-bottom: 2rem;
 }
 
 #conteiner-header {
@@ -29,7 +30,7 @@ header {
   align-items: center;
 }
 
-#pesquisa button {
+#departamento {
   display: flex;
   height: 4rem;
   width: 24%;
@@ -46,8 +47,12 @@ header {
 #pesquisa button p strong {
   font-size: 1.5rem;
 }
+form {
+  width: 100%;
+  margin-left: 1rem;
+}
 
-#pesquisa input {
+#pesquisa form input {
   border: 2px solid #ededed;
   border-radius: 5px;
   width: 70%;
@@ -105,4 +110,44 @@ i {
 }
 #carrinho {
   color: white;
+}
+#busca {
+  width: 3rem;
+  height: 2.5rem;
+}
+section {
+  width: 85%;
+  margin: 0 auto;
+  align-items: center;
+}
+section div {
+  display: flex;
+  align-items: center;
+}
+
+#carrossel-contrainer {
+  overflow: hidden;
+  width: 93.5%;
+  max-width: 93.5%;
+  display: flex;
+  list-style: none;
+}
+
+.carrossel {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  list-style: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.item {
+  min-width: 233px;
+  margin: 0 10px;
+}
+section div button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #e90313;
 }

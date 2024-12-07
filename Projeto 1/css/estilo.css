@@ -314,7 +314,7 @@ ul {
   }
 }
 
-@media only screen and (max-height: 960px) and (min-height: 602px) {
+@media only screen and (max-width: 420px) {
   #menu {
     display: none;
   }
