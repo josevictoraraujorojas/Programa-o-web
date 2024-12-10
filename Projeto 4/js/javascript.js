@@ -28,6 +28,7 @@ function atualizaCarrossel() {
   next.disabled  = indice === 1;
 }
 
+
 // Atualiza o carrossel no início
 atualizaCarrossel();
 
@@ -46,3 +47,17 @@ next.addEventListener('click', () => {
     atualizaCarrossel(); // Atualiza a posição do carrossel
   }
 });
+
+let departamento = document.getElementById("departamento");
+let aside = document.querySelector("aside");
+
+departamento.addEventListener('click', () => {
+  if (aside.classList.contains('active')) {
+    aside.classList.remove('active'); // Esconde o menu
+  } else {
+    aside.classList.add('active'); // Mostra o menu
+  }
+});
+
+
+
