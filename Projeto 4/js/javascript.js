@@ -49,9 +49,18 @@ next.addEventListener('click', () => {
 });
 
 let departamento = document.getElementById("departamento");
+let close = document.getElementById("close");
 let aside = document.querySelector("aside");
 
 departamento.addEventListener('click', () => {
+  if (aside.classList.contains('active')) {
+    aside.classList.remove('active'); // Esconde o menu
+  } else {
+    aside.classList.add('active'); // Mostra o menu
+  }
+});
+
+close.addEventListener('click', () => {
   if (aside.classList.contains('active')) {
     aside.classList.remove('active'); // Esconde o menu
   } else {
