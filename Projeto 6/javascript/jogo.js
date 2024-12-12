@@ -1,85 +1,31 @@
-let tabuleiro = document.createElement("canvas");
-const largura = 1000;
-const altura = 1000;
-document.body.appendChild(tabuleiro);
-
-tabuleiro.style.width = largura+"px";
-tabuleiro.style.height = altura+"px";
-tabuleiro.style.backgroundColor = "black"
-
-let cobra = [{ x: 5, y: 5 },{ x: 4, y: 5 }];
-
-const ctx = tabuleiro.getContext("2d");
-
-const larguraCobra =10;
-const alturaCobra = 2
-
-function desenhaCobra(direcao) {
-    // Limpa o canvas antes de desenhar
-    ctx.fillStyle = "green"; // Cor da cobra
-    
-    // Desenhar cada segmento da cobra
-    for (let segmento of cobra) {
-        ctx.clearRect(segmento.x-1, segmento.y-1, largura, altura);
-        ctx.fillRect(segmento.x, segmento.y ,larguraCobra, alturaCobra);
-    }
-}
-
-desenhaCobra();
-let direcao;
-
-document.addEventListener("keydown", function(event) {
-
-    switch(event.key){
-        case 'd':
-            direcao = "direita";
-            break;
-        case 'a':  
-        direcao = "esquerda";  
-            break;
-
-        case 'w':
-            direcao = "cima";  
-        break
-        case 's':
-            direcao = "baixo"; 
-        break
+import Bola from "./Bola.js";
+import Direcao from "./Direcao.js";
+import Jogador from "./Jogador.js";
 
 
-    }
-   });
+const canvas = document.getElementById("canva");
+const ctx = canvas.getContext('2d');
 
-   intervalo = setInterval(function() {
-    for(i=0;i<cobra.length;i++){
-        switch (direcao) {
-            case "direita":
-            cobra[i].x++;
-            desenhaCobra(direcao);
-            break;
+canvas.width = innerWidth;
+canvas.height = innerHeight;
 
-            case "esquerda":
-            cobra[i].x--;
-            desenhaCobra(direcao);
-            break;
 
-            case "cima":
-            cobra[i].y--;
-            desenhaCobra(direcao);
-            break;
+const direcao = new Direcao;
 
-            case "baixo":
-            cobra[i].y++;
-            desenhaCobra(direcao);
-            break;
+const jogador1 = new Jogador('esquerda',canvas,direcao);
+const jogador2 = new Jogador('direita',canvas,direcao);
+const bola = new Bola(1,direcao,canvas);
 
-            default:
-            cobra[i].x++;
-            desenhaCobra(direcao);
-            break;
-        }
-         }
-        
-    }, 30);
+ctx.fillStyle = "red";
+ctx.fillRect(jogador1.x,jogador1.y,jogador1.largura,jogador1.altura);
+
+ctx.fillRect(jogador2.x,jogador2.y,jogador2.largura,jogador2.altura);
+
+ctx.fillRect(bola.x,bola.y,bola.largura,bola.altura);
+
+
+
+
 
 
 
